@@ -1,5 +1,5 @@
  <!-- nav bar -->
-      <div id="navbar" align='center' >   
+      <div id="navbar"  >   
          <div id="close" class="closebtn" onclick="closeNav()" style="color :red;text-align:center;">X</div>
 
          <div class="dropdown">
