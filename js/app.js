@@ -6,7 +6,6 @@ function clickCounter() { // si  l'utilisateur a déjà accepté les conditons g
     } else {
       localStorage.bannerConsent = 1;
     }
-    console.log( "You have clicked the button " + localStorage.bannerConsent + " time(s)."  );
   } 
 
 }
