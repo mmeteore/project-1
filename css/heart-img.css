@@ -1,0 +1,16 @@
+
+.heart {
+  width: 100px;
+  height: 75px;
+  background: url("heart.png") no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
+  transition: background-position 1s steps(28);
+  transition-duration: 1s;
+  
+  
+}
+.is-active {
+    transition-duration: 1.5s;
+    background-position: -2800px 0;
+  }

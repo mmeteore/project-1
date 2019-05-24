@@ -1,0 +1,439 @@
+body {
+  font-family: 'Orbitron', serif;
+  background-color: ;
+  /*background:url("bg.jpg")no-repeat center center fixed; */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: fixed;
+  color: #555;
+  font-size: 13px;
+   height: 100%;
+  letter-spacing: 2px;
+
+}
+html {
+  background-color: ;
+}
+
+h1 {
+  text-align: center;
+  color: #777;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 16px;
+    background-color: rgba(220,223,245, 0.97);
+    width:50%;
+    margin-left: 50%;
+    border-radius: 9px;
+    background-size:cover;
+    float: right;
+    box-shadow :0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    max-width: 590px;
+}
+
+#pwdMsg {
+  display: none;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password],input[type=submit] , .email, textarea {
+    width: 100%;
+    min-width: 300px;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    box-shadow :0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+
+input[type=text]:focus, input[type=password]:focus, .email:focus {
+    background-color: rgb(143,156,213);
+    outline: none;
+    color: white;
+    transition: 1s;
+    border-radius: 40px;
+}
+
+
+hr {
+  border: 0; 
+  height: 3px; 
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
+   
+}
+/**/
+.form-edit {
+  background-color: #fff;
+  width: 50%;
+  min-width: 300px;
+  margin: auto;
+  box-shadow: 5px 5px 5px 5px gray;
+}
+.form-edit h2 {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  margin-top: 20px;
+  padding: 17px;
+}
+
+.dragover  {
+  border : 2px dashed gray;
+}
+
+/* button design */
+
+.registerbtn {
+    padding: 10px;
+    min-width : 200px;
+    background-color: #4CAF50;
+    height: 50px;
+    color: white;
+    font-size: 1em;
+    border: none;
+
+}
+button:hover {
+    box-shadow :0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/* #BUTTON DESIGN   */
+
+/* CHECKBOX DESIGN */
+ /* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 30px;
+}
+.switch:hover{
+}
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .2s;
+  transition: .2s;
+  border: 2px solid  grey;
+}
+
+.hidden {
+  display: none;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .2s;
+  transition: .0.2s;
+}
+
+input:checked + .slider {
+  background-color: #4CAF50;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  -moz-transform: translateX(20px);
+  -o-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 30px;
+}
+
+.slider.round:before {
+  border-radius: 60%;
+} 
+ 
+
+/* button */
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  
+}
+/*#CHECKBOX DESIGN */
+
+
+a {
+    color: #eee;
+    text-decoration: none;
+    font-variant-numeric: slashed-zero;
+    font-weight:  bold;
+}
+
+.signin {
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    color: white;
+    height: auto;
+    padding-top: 30px;
+}
+.psw_msg
+{
+font-weight:italic;
+color:red;
+font-size: 19px;
+
+}
+@media  (max-width: 768px){
+   input[type=text], input[type=password] ,.email{
+    width: 250px;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+} 
+.container {
+    padding: 16px;
+    background-color: rgba(220,223,245, 0.9);
+    width: 100%;
+  
+    margin-left: 0%;
+}
+.signin {
+    text-align: center;
+    color: white;
+  background: rgba(0, 0, 0, 0.6);
+}
+input[type=text]:focus, input[type=password]:focus, .email:focus {
+    background-color: rgb(143,156,213);
+    outline: none;
+    color: white;
+    transition: 0.5s;
+    border-radius: 40px;
+}
+
+}
+
+.btn {
+    cursor: pointer;
+}
+
+sub  a{
+  padding-left: 10px;
+  font-size-adjust: 8em;
+  color: black;
+  font-weight: initial;
+}
+sub {
+  padding-left: 10px;
+  font-size-adjust: 8em;
+  color: #555;
+  font-weight: normal;
+
+}
+/* BANNER ALERT BOX */
+
+.alert {
+  background: #242943;
+  padding: 25px;
+  color  : #fff !important;
+  width: 100%;
+  position : absolute;
+  z-index: 7;
+  bottom : 0;
+  left : 0;
+  right: 0;
+  
+}
+
+
+
+img {
+  display: inline-block;
+  align-self: center;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: red;
+}
+@-webkit-keyframes fadeOutDown {
+ from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 100%, 0);
+  }
+
+}
+
+
+@keyframes fadeOutDown {
+  from {
+    opacity: 0;
+    transform: translate(0, 100%);
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;    
+  } 
+
+  to {
+    opacity: 0;
+    transform:  translate( 0, 100%);
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform : translate3d(0, 100%, 0);
+ }
+}
+.alert {
+  -webkit-animation-name: fadeOutDown;
+  animation-name: fadeOutDown;
+  animation: fadeOutDown 5s ease 1;
+  font-family: monospace;
+}
+
+.fadeOut {
+  -webkit-animation-name : fadeOut;
+  animation: fadeOut 3s ease 1;
+}
+
+/* #ALERT BOX */
+
+
+/* pop up */
+
+.pop-up {
+  z-index: 1000;
+  max-width: 968px;
+  width : 100%;
+  margin: auto; 
+  background-color: #eee; 
+  padding: 5px; 
+  margin-top: 50px;
+  margin-bottom: 50px;
+  overflow: auto;
+  padding-top: 13px;
+  overflow-x: auto;
+  overflow-y: auto;
+  overflow: auto;
+  height: 95%;
+  color: black;
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px gray;
+}
+.pop-up p {
+  text-align: justify;
+  font-size: 19px;
+  font-family: serif;
+}
+.readMsg {
+  background-color: rgba(255, 255, 255, .9);
+  width: 100%;
+  height: 100%;
+  border : 2px solid black;
+  position: fixed;
+  top: 0;
+  left : 0;
+  right: 0;
+  display: none;
+  position: fixed;
+}
+.pop-up button {
+  background-color: none;
+  color: red;
+  border : none;
+  cursor: pointer;
+  font-size: 29px;
+  float: right;
+}
+
+@media screen and (max-width: 768px){
+  .pop-up {
+    width: 87%;
+  }
+
+} 
+
+
+/* pop-up */

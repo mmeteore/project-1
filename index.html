@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="Encylopédie en ligne">
+  <meta name="abstract" content="Encylopédie en ligne">
+  <meta name="keywords" content="<?=$infoArticle['title']?>" />
+  <meta name="author" content="meteor">
+  <meta name="generator" content="PHPMyADMIN" />
+  <meta http-equiv="pragma" content="no-cache" />
+  <meta name="identifier-url" content="http://e-encylopedia.com/" />
+  <meta name="revisit-after" content="1" />
+  <meta content="origin" name="referrer"> 
+  <meta data-n-head="true" name="referrer" content="origin-when-crossorigin">
+  <meta name="language" content="FR" />
+  <meta name="robots" content="All" />  
+  <meta name="twitter:site" content="@e-encylopedia">
+  <meta name="twitter:creator" content="@e-encylopedia">
+  <meta property="og:site_name" content="e-encylopedia"/>
+  <meta name="twitter:widgets:csp" content="on"/>
+  <link rel="alternate" href="https://e-encylopedia.com/" hreflang="x-default"/>
+  <meta name="theme-color" content="#4F4F4F" />
+  <meta name="msapplication-navbutton-color" content="#4F4F4F">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="robots" content="noodp" />
+  <meta name="DC.Format" content="text/html" />
+  <meta name="DC.Type" content="Text" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="img/logo.png" />
+  <link rel="icon" type="image/png" href="img/logo.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="img/logo.png" sizes="16x16" />
+
+  <title>e-encyclopédia</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="css/boots.css">
+
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-inverse navbar-fixed-top" style="color: white;">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">e-encyclopédia</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">A PROPOS</a></li>
+        <li><a href="#pricing">NOS THÈMES</a></li>
+        <li><a href="connexion.php">SE CONNECTER</a></li>
+        <li><a href="inscription.php">S'INSCRIRE</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">  
+    <h1 style="color: #aaa"> e-encyclopédia </h1> 
+
+    <canvas id="canvas" width="150" height="150">
+      <p>Désolé, votre navigateur ne supporte pas Canvas. Mettez-vous à jour</p>
+    </canvas>
+
+      <h3 id='demo'></h3> 
+</div>
+
+<!-- Contenu (a propos de nous) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8 object">
+      <h2>Quelques mots sur nous</h2><br>
+      <h4>e-encyclopédia, est une jeune entreprise, et un tout nouveau site web dont l'unqiue but est d'aider les personnes désireuses d'apprendre & partager leurs savoirs.<br>
+      Tout nouveau sur le web, nous demandons à toi l'internaute de nous aider à se développer. Pour cela partage ton savoir avec nous et viens étendre le tien.</h4><br>
+      <br><a class="btn btn-primary btn-lg" style="width : 300px;" href="#text-block">Alors c'est parti?</a>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-heart slideanim logo object"></span>
+    </div>
+  </div>
+</div>
+<!-- effet de paralaxe -->
+<div class="parallax text-center" id='text-block'>
+   <div class="text-block" >
+    <h4>Prêt(e) ?</h4>
+    <p>Ça donne envie non ? Alors c'est parti !</p>
+  </div>
+</div>
+
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-screenshot logo slideanim object"></span>
+    </div>
+    <div class="col-sm-8">
+      <h2>Nos objectifs</h2><br>
+      <h4><strong>MISSIONS:</strong> notre mission est de pouvoir vous apporter à la fois un support pour échanger les connaissances avec d'autres utilisateurs mais aussi, afin de pouvoir t'aider en vue de tes études.</h4><br>
+      <p><strong>VISION:</strong>Nous souhaitons pour cela mettre à ta disposition un site clair et fiable afin d'assurer le meilleur possible.
+      Pour cela, n'hésitez pas à nous contacter afin que nous puissions améliorer l'érgonomie et les fonctionalités de ce site.
+      De plus, nous avons besoin de toi pour enrichir le contenu de ce dernier. Donc si cela t'intéresse, rejoins-nous et aide nous à le developper!
+
+    </p>
+    </div>
+  </div>
+</div>
+
+
+  <h2 class="text-center object" style="padding-top: 120px;">Un site fait pour vous !</h2>
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicateurs -->
+    <ol class="carousel-indicators object">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- slider citations -->
+    <div class="carousel-inner object" role="listbox">
+      <div class="item active">
+        <h4>"Ici viens étancher ta soif de savoir"<br><span>Antom, co-fondateur et modérateur du site e-encyclopédia</span></h4>
+      </div>
+      <div class="item">
+        <h4>"Tout commence avec le partage d'un savoir"<br><span>Antom, co-fondateur et modérateur du site e-encyclopédia</span></h4>
+      </div>
+      <div class="item">
+        <h4>"Le savoir sans partage est l'ignorance"<br><span>meteor, co-fondateur et administrateur du site e-encyclopédia</span></h4>
+      </div>
+    </div>
+
+    <!-- controles droite gauche -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<!-- Containu (cases themes) -->
+<div id="pricing" class="container-fluid">
+  <div class="text-center object">
+    <h2>Nos thèmes</h2>
+    <h4>Vous désirez lire...</h4>
+  </div>
+  <!-- premiere ligne -->
+  <div class="row slideanim">
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Sciences(Maths, Astronomie)</h1>
+        </div>
+        <div class="panel-body">
+          <p>Toute l'actualité scientifique, dossiers de fond, forums et conseils pratiques. Une banque de connaissances fiables par e-encyclopedia.</p>
+        </div>
+        <div class="panel-footer">
+          <img src="https://img.icons8.com/nolan/2x/math.png" width="100px" height="100px"> <br/>
+          <a class=" btn btn-lg" href='article/index.php?section=1'>Lire</a>
+        </div>
+      </div>      
+    </div> 
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Physique</h1>
+        </div>
+        <div class="panel-body">
+          <p>L'énergie baigne notre monde. Sans elle adieu la vie! Mais quelles sont les avancées scientifques dans ce domaine ? </p>
+        </div>
+        <div class="panel-footer">
+          <img src="https://img.icons8.com/nolan/2x/physics.png" width="100px" height="100px"> <br/>
+          <a class=" btn btn-lg" href='article/index.php?section=2'>Lire</a>
+        </div>
+      </div>      
+    </div> 
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Biologie (ecologie, geologie, animaux)</h1>
+        </div>
+        <div class="panel-body">
+          <p>Au sein de cette catégorie ci, tu trouveras tous les articles portants sur la biologie, l'écologie, ainsi que les animaux.</p>
+        </div>
+        <div class="panel-footer">
+          <img src="https://img.icons8.com/nolan/2x/leaf.png" width="100px" height="100px"> <br/>
+          <a  class=" btn btn-lg" href='article/index.php?section=3'>Lire</a>
+        </div>
+      </div>      
+    </div> 
+</div>
+  <!-- second row slider -->
+ <div class="row slideanim">
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Informatique</h1>
+        </div>
+        <div class="panel-body">
+          <p>"Le principe de l'évolution est beaucoup plus rapide en informatique que chez le bipède." Alors lance-toi.</p>
+        </div>
+        <div class="panel-footer">
+          <img src="https://img.icons8.com/nolan/2x/laptop.png" width="100px" height="100px"> <br/>
+          <a class="btn btn-lg" href='article/index.php?section=4'>Lire</a>
+        </div>
+      </div>      
+    </div> 
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Histoire</h1>
+        </div>
+        <div class="panel-body">
+          <p>Le racisme, le manque de tolérance caché sous l'arrogance, les guerres et leurs conséquences, marquent l'histoire de nos pays. Alors est-tu prêts à savoir un peu plus sur l'origine de notre société?</p>
+        </div>
+        <div class="panel-footer">
+          <img src="https://img.icons8.com/nolan/2x/clock.png" width="100px" height="100px"> <br/>
+          <a class=" btn btn-lg" href='article/index.php?section=5'>Lire</a>
+        </div>
+      </div>      
+    </div> 
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Géographie</h1>
+        </div>
+        <div class="panel-body">
+          <p>L'histoire n'est que la géographie dans le temps, comme la géographie n'est que l'histoire dans l'espace.</p>
+        </div>
+        <div class="panel-footer">
+          <img src="https://img.icons8.com/nolan/2x/world-map.png" width="100px" height="100px"> <br/>
+          <a class=" btn btn-lg" href='article/index.php?section=6'>Lire</a>
+        </div>
+      </div>      
+    </div> 
+</div>
+<!-- third container -->
+ <div class="row slideanim">
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Economie</h1>
+        </div>
+        <div class="panel-body">
+          <p>
+          L'économie semble aujourd'hui mener le monde. Quelles sont ces theories qui régissent les marchés, permettent de prévoir les cours de la bourse ou les périodes de crise ? </p>
+        </div>
+        <div class="panel-footer">
+          <img src="https://img.icons8.com/nolan/2x/euro-pound-exchange.png" width="100px" height="100px"> <br/>
+          <a class=" btn btn-lg" href='article/index.php?section=7'>Lire</a>
+        </div>
+      </div>      
+    </div> 
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>littérature(films, art, peinture)</h1>
+        </div>
+        <div class="panel-body">
+          <p>La littérature ne change ni l'homme ni la société. Pour autant, l'absence de littérature rendrait l'homme encore plus infréquentable.</p>
+        </div>
+        <div class="panel-footer">
+          <img src="https://img.icons8.com/nolan/2x/literature.png" width="100px" height="100px"> <br/>
+          <a class=" btn btn-lg" href='article/index.php?section=8'>Lire</a>
+        </div>
+      </div>      
+    </div> 
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Sport</h1>
+        </div>
+        <div class="panel-body">
+          <p>Le sport est dépassement de soi. Le sport est école de vie.</p>
+        </div>
+        <div class="panel-footer">
+          <img src="https://img.icons8.com/nolan/2x/running.png" width="100px" height="100px"> <br/>
+          <a class=" btn btn-lg" href='article/index.php?section=9'>Lire</a>
+        </div>
+      </div>      
+    </div> 
+</div>
+
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top" class="to-top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p class="object"> <i>Un site réalisé par <a  href="profil.php?id=1">Meteor</a> <a href="profil.php?id=2">Antom</a></p></i>
+</footer>
+  <!-- js file -->
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/index.js"></script>
+
+
+</body>
+</html>

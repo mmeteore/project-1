@@ -1,0 +1,94 @@
+
+.comments-section {
+  margin: auto;
+  max-width: 768px;
+  width: 100%;
+  color: white;
+}
+.comments-section h4 {
+  margin: 0;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: gray;
+  border-bottom: 1px solid #666;
+  padding-bottom: 5px;
+}
+.comments-section .comments {
+  color: white;
+}
+.comments-section .comments h4 {
+  border: 0;
+}
+.comments-section .comment {
+  background: #28282B;
+  padding: 20px;
+  font-size: 15px;
+  margin-bottom: 20px;
+  border-radius: 7px;
+  text-align: justify;
+}
+.comments-section .comment blockquote {
+  color: #eee;
+  padding: 1em;
+  border-left: 2px solid #76daff;
+  background: rgba(0, 0, 0, 0.05);
+}
+.comments-section .comment code {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 2px 5px;
+  margin: 0 2px;
+  border-radius: 2px;
+
+}
+.comments-section .comment .box {
+  background: #1d1f20;
+  padding: 20px;
+}
+.comments-section .comment .box pre {
+  overflow: auto;
+  margin: 0;
+}
+.comments-section .comment .box pre code {
+  background: transparent;
+}
+.comments-section .comment .box + .box {
+  padding-top: 0px;
+}
+.comments-section .comment a {
+  color: #76daff;
+  text-decoration: none;
+}
+.comments-section .comment .comment-user {
+  border-bottom: 1px solid #555;
+  padding: 10px 45px 20px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.comments-section .comment  img {
+  width: 35px;
+  height: 35px;
+  margin-left: -50px;
+}
+.comments-section .comment .comment-user .username {
+  color: #76daff;
+}
+.comments-section .comment .comment-user .user-details {
+  color: #666;
+  margin-left: 10px;
+}
+.comments-section .comment .comment-user .user-details span:last-child {
+  color: #999;
+  font-size: 80%;
+}
+.comments-section .comment .comment-text {
+  padding: 10px 45px 20px;
+  color: white;
+}
+
+.username {
+  color: white;
+}
+

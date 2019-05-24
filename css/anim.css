@@ -1,0 +1,61 @@
+@-webkit-keyframes slide {
+	  from {
+	    opacity: 0;
+	    -webkit-transform: translate3d(2000px, 0, 0);
+	    transform: translate3d(2000px, 0, 0);
+	  }
+
+	  to {
+	    opacity: 1;
+	    -webkit-transform: translate3d(0, 0, 0);
+	    transform: translate3d(0, 0, 0);
+	  }
+    }
+
+	@keyframes slide {
+	  from {
+	    opacity: 0;
+	    -webkit-transform: translate3d(2000px, 0, 0);
+	    transform: translate3d(2000px, 0, 0);
+	  }
+
+	  to {
+	    opacity: 1;
+	    -webkit-transform: translate3d(0, 0, 0);
+	    transform: translate3d(0, 0, 0);
+	  }
+    }
+
+    .slideRight {
+    	animation: slide 1s ease 1;
+    }
+
+
+
+    
+
+    .slider {
+    	display: none;
+    }
+
+    .slideDown {
+    	animation: slide 1s ease 1;
+    }
+
+
+
+@-webkit-keyframes fadeUp {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes fadeUp {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
+ .fadeUp {
+    	animation: fadeUp 1.5s ease 1;
+    }
+
+

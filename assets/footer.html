@@ -1,0 +1,324 @@
+<!-- footer -->
+        <div class="footer">
+            <footer >
+
+                <div class="footer-left">
+
+                    <h3>e-<span>encyclopedia</span></h3>
+                    <p class="footer-company-name"> <span style='color : #aaa; font-family:freemono; ' > Un projet libre et open source !</span> <br /> 
+                         <span style='color : #fff; line-height: 1.2; text-align: justify; ' >Droit d'auteur : les textes sont disponibles sous licence Creative Commons attribution, partage dans les mêmes conditions (sauf mention contraire). D’autres conditions peuvent s’appliquer. En cas de réutilisation des textes de cette page, n'oubliez pas de citer les auteurs et mentionner la licence CC-NA-2.0.</span>
+                         <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/"></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/">Generic License</a>.<img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/2.0/88x31.png" />
+                    </p>
+                </div>
+
+                <div class="footer-left">
+
+                    <div>
+                        <i class="fa fa-address-card-o"></i>
+                        <p><span>Lire tout  </span></p>
+                    </div>
+
+                    <div>
+                        <i class="  fa fa-address-book-o"></i>  
+                        <p><span> en s'amusant </span></p>
+                    </div>
+
+                    <div>
+                        <i class="fa fa-cog"></i>
+                        <p><a href="mailto:shawonshoot@gmail.com">Nous soutenir</a></p>
+                    </div>
+
+                </div>
+
+                <div class="footer-right" >
+                      <div class="panel-footer panel-footer-default afooter" style="background-color: #fff; ">
+                        <div class="panel-footer-heading" style="background-color: #ddd; padding: 25px;  width: auto; margin: auto; text-align: center"><p><i><span>Qui sommes-nous ?</span> </i> </p></div>
+                           <div class="panel-footer-body"  style="color: gray !important; padding: 7px;  margin: auto;  width: auto; text-align: initial;">
+                               <p> <br /><i>Passionés par l'informatique, nous sommes <a style="text-decoration: none; color: none;" href="http://localhost/projet/profil.php?id=2"> fantom </a> et<a href="http://localhost/projet/profil.php?id=1" style="text-decoration: none; color: none;"> meteor</a> les co-fondateurs de ce site. Vous pouvez également suivre notre aventure en temps réel sur les réseaux sociaux  ! Suivez-nous sur:</i> </p>
+                           </div>
+                      </div>
+
+                    <div class="footer-icons">
+
+                        <a href="https://www.facebook.com/profile.php?id=100026444061644"><i class="fa fa-facebook"></i></a>
+                        <a href="https://twitter.com/sakir55599001"><i class="fa fa-twitter"></i></a>
+                        <a href="https://codepen.io/m-metore/#"><i class="fa fa-codepen"></i></a>
+                        <a href="https://github.com/mmeteore"><i class="fa fa-github"></i></a>
+
+                    </div>
+
+                </div>
+            </footer>
+
+        </div>
+
+
+        <!-- js disable -->
+
+        <div class='no-script' id='disableJs' >
+
+          <div class=" ">
+
+            <div class="modal-title">e-encylopedia doesn't work very well without JavaScript.</div>
+
+            <p>We're all for progressive enhancement, <br />but e-encylopedia is a bit unique in that it's all about writing and showing front end code, including HTML.<br /> It's required to use most of the features of e-encylopedia.</p>
+
+            <p>Need to know how to enable it? <a href="http://enable-javascript.com/" >Go here.</a></p>
+
+
+          </div>
+
+        </div>
+
+        <script type="text/javascript">
+           document.getElementById('disableJs').style.display = 'none';
+
+               // alert for IE
+            function alertIE() {
+
+                var userAgent = window.navigator.userAgent;
+                var msie = userAgent.indexOf("MSIE"); // 
+
+                if (msie != -1 || !!navigator.userAgent.match(/Trident.*rv\:11\./)) { // If Internet Explorer
+
+                       
+                        alert("Désolé, nous avons détecté que vous utilisez Internet Explorer. \n Ce navigateur est peu sécurisé et ne respecte pas la norme mis en place par W3C. \n Nous vous conseillons d'utiliser une version récente de Firefox(ou de Chrome) \n très robuste et qui respecte mieux votre vie privée.");
+
+                    
+                }
+
+                return false;
+            }
+            
+            alertIE();
+        </script>
+
+            
+        <style>
+            .no-script {
+            z-index : 100000;
+            background :#333;
+            display: block;
+            color : #eee;
+            min-height: 400px;
+            text-align : center;
+            bottom : 0;
+            position : fixed ; 
+            width : 100%;
+            margin : 0;
+            max-height : 90%;
+            font-size : 17px;
+            padding-top : 120px;
+            
+        } 
+        .no-script a {
+            color : orange;
+        }
+
+        .modal-title {
+            color : gray;
+            font-size : 27px;
+        }
+
+             
+
+        /* footer desing */
+
+            .footer{
+            background-color: #292c2f;
+            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+            box-sizing: border-box;
+            width: 100%;
+            margin: auto;
+            text-align: left;
+            font: bold 16px sans-serif;
+
+            padding: 55px 50px;
+            margin-top: 80px;
+        }
+
+        footer {
+            max-width: 1287px;
+            margin: auto;
+        }
+
+        .footer .footer-left,
+        .footer .footer-left,
+        .footer .footer-right{
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        /* Footer left */
+
+        .footer .footer-left{
+            width: 40%;
+        }
+
+        /* The company logo */
+
+        .footer h3{
+            color:  #ffffff;
+            font: normal 16px 'monospace', cursive;
+            margin: 0;
+        }
+        .footer p{
+            color:  #;
+            font: normal 16px 'monospace', cursive;
+            margin: 0;
+        }
+
+        .footer h3 span{
+            color:  #5383d3;
+        }
+        .footer  span{
+            color:  #5383d3;
+        }
+
+        /* Footer links */
+
+        .footer .footer-links{
+            color:  #ffffff;
+            margin: 20px 0 12px;
+            padding: 0;
+        }
+
+        .footer .footer-links a{
+            display:inline-block;
+            line-height: 1.8;
+            text-decoration: none;
+            color:  inherit;
+        }
+
+        .footer .footer-company-name{
+            color:  #8f9296;
+            font-size: 14px;
+            font-weight: normal;
+            margin: 0;
+        }
+
+        /* Footer Center */
+
+        .footer .footer-left{
+            width: 35%;
+        }
+
+        .footer .footer-left i{
+            background-color:  #33383b;
+            color: #ffffff;
+            font-size: 25px;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 42px;
+            margin: 10px 15px;
+            vertical-align: middle;
+        }
+
+        .footer .footer-left i.fa-envelope{
+            font-size: 17px;
+            line-height: 38px;
+        }
+
+        .footer .footer-left p{
+            display: inline-block;
+            color: #ffffff;
+            vertical-align: middle;
+            margin:0;
+        }
+
+        .footer .footer-left p span{
+            display:block;
+            font-weight: normal;
+            font-size:14px;
+            line-height:2;
+        }
+
+        .footer .footer-left p a{
+            color:  #5383d3;
+            text-decoration: none;;
+        }
+
+
+        /* Footer Right */
+
+        .footer .footer-right{
+            width: 300px;
+            border: 2px solid gray;
+            background-color: #ddd;
+            align-content: center;
+            box-shadow: 3px 3px 11px gray;
+        }
+
+        .footer .footer-company-about{
+            line-height: 20px;
+            color:  #92999f;
+            font-size: 13px;
+            font-weight: normal;
+            margin: 0;
+        }
+
+        .footer .footer-company-about span {
+            display: block;
+            color:  #ffffff;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .footer .footer-icons{
+            margin-top: 25px;
+        }
+
+        .footer .footer-icons a{
+            display: inline-block;
+            width: 35px;
+            height: 35px;
+            cursor: pointer;
+            background-color:  #33383b;
+            border-radius: 2px;
+
+            font-size: 20px;
+            color: #ffffff;
+            text-align: center;
+            line-height: 35px;
+
+            margin-right: 19px;
+            margin-bottom: 5px;
+            margin-left: 15px;
+        }
+
+
+        @media (max-width: 768px) {
+
+            .footer{
+                font: bold 14px sans-serif;
+            }
+
+            .footer .footer-left,
+            .footer .footer-left,
+            .footer .footer-right{
+                display: block;
+                width: 100%;
+                margin-bottom: 40px;
+                text-align: center;
+            }
+
+            .footer .footer-left i{
+                margin-left: 0;
+            }
+
+        }
+        footer a:hover {
+          box-shadow: 5px 5px white;
+          transition: 0.7s;
+        }
+
+
+        </style>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+        
